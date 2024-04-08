@@ -43,7 +43,7 @@ N -235 -60 -235 -30 {
 lab=#net3}
 N -235 -30 -210 -30 {
 lab=#net3}
-C {devices/vsource.sym} -520 -120 1 0 {name=V1 value="SIN (0 100u 10Hz)" savecurrent=false}
+C {devices/vsource.sym} -520 -120 1 0 {name=V1 value="SIN (0 1u 10Hz)" savecurrent=false}
 C {devices/gnd.sym} -590 -100 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -180 -30 3 0 {name=V2 value=-1.8 savecurrent=false}
 C {devices/gnd.sym} -130 -20 0 0 {name=l2 lab=GND}
@@ -65,7 +65,7 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} -250 -220 1 0 {name=R2
-value=100k
+value=10k
 footprint=1206
 device=resistor
 m=1}

@@ -6,8 +6,8 @@ V {}
 S {}
 E {}
 B 2 -1280 -800 -480 -400 {flags=graph
-y1=-0.058
-y2=1e-06
+y1=-1e-05
+y2=1e-05
 ypos1=0
 ypos2=2
 divy=5
@@ -61,7 +61,7 @@ N -220 -260 -220 -140 {
 lab=VOUT}
 N -620 -120 -490 -120 {
 lab=VIN}
-C {devices/vsource.sym} -650 -120 1 0 {name=V1 value="SIN (0 100u 10hz)" savecurrent=false}
+C {devices/vsource.sym} -650 -120 1 0 {name=V1 value="SIN (0 1u 100hz)" savecurrent=false}
 C {devices/gnd.sym} -700 -80 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -165 -140 0 0 {name=p2 sig_type=std_logic lab=VOUT}
 C {devices/vsource.sym} -340 -220 3 0 {name=V3 value=1.8 savecurrent=false}
@@ -73,15 +73,6 @@ C {devices/launcher.sym} -1210 -320 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/buffer.raw tran"
 }
-C {devices/code.sym} -1280 -270 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/code_shown.sym} -330 -580 0 0 {name=s1 only_toplevel=false value="
 .control
 save all
@@ -90,3 +81,4 @@ write buffer.raw
 .endc
 "}
 C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -320 -140 0 0 {name=x1}
+C {sky130_fd_pr/corner.sym} -960 -220 0 0 {name=CORNER only_toplevel=true corner=tt}

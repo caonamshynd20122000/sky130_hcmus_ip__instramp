@@ -97,8 +97,8 @@ value="
 
 "
 spice_ignore=false}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -15 -25 0 0 {name=C2 model=cap_mim_m3_1 W=5.55 L=10 MF=40 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -395 -20 0 0 {name=C3 model=cap_mim_m3_1 W=5.55 L=10 MF=40 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -15 -25 0 0 {name=C2 model=cap_mim_m3_1 W=5 L=10 MF=50 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -395 -20 0 0 {name=C3 model=cap_mim_m3_1 W=5 L=10 MF=50 spiceprefix=X}
 C {devices/lab_wire.sym} -260 -75 0 0 {name=p5 sig_type=std_logic lab=INP}
 C {devices/lab_wire.sym} -635 -90 0 0 {name=p6 sig_type=std_logic lab=INN}
 C {devices/lab_wire.sym} -635 -50 0 0 {name=p7 sig_type=std_logic lab=INP}

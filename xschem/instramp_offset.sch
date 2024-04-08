@@ -47,6 +47,10 @@ N -120 -160 -60 -160 {
 lab=VOUT1}
 N -110 160 -55 160 {
 lab=VOUT2}
+N -165 -125 -165 -105 {
+lab=GND}
+N -155 195 -155 210 {
+lab=GND}
 C {devices/vsource.sym} -445 -95 0 0 {name=V1 value="SIN (0 10m 10hz )" savecurrent=false}
 C {devices/gnd.sym} -445 -35 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} -435 225 0 0 {name=V2 value="SIN (0 10m 10hz )" savecurrent=false}
@@ -78,10 +82,12 @@ dc V1 -1.8 1.8 1m
 write v1.raw
 dc V2 -1.8 1.8 1m
 write v2.raw
-*write opamp_offset.raw
+*write instramp_offset.raw
 .endc
 "}
 C {devices/lab_wire.sym} -65 -160 0 0 {name=p7 sig_type=std_logic lab=VOUT1}
 C {devices/lab_wire.sym} -60 160 0 0 {name=p8 sig_type=std_logic lab=VOUT2}
 C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/IA.sym} -140 -160 0 0 {name=x1}
 C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/IA.sym} -130 160 0 0 {name=x2}
+C {devices/gnd.sym} -165 -105 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} -155 210 0 0 {name=l6 lab=GND}

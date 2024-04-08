@@ -7,58 +7,34 @@ S {}
 E {}
 N -510 -500 -280 -500 {
 lab=VOUT}
-N -880 -940 -660 -940 {
-lab=#net1}
-N -600 -940 -500 -940 {
-lab=#net2}
 N -440 -940 -340 -940 {
 lab=VOUT}
 N -340 -940 -340 -500 {
 lab=VOUT}
-N -880 -80 -660 -80 {
-lab=#net3}
-N -600 -80 -500 -80 {
-lab=#net4}
 N -740 -520 -680 -520 {
 lab=#net1}
 N -740 -940 -740 -520 {
 lab=#net1}
 N -740 -480 -680 -480 {
-lab=#net3}
+lab=#net2}
 N -740 -480 -740 -80 {
-lab=#net3}
-N -1040 -80 -940 -80 {
-lab=#net5}
-N -1040 -940 -940 -940 {
-lab=#net6}
-N -1200 -940 -1100 -940 {
-lab=#net7}
-N -1200 -80 -1100 -80 {
-lab=#net8}
+lab=#net2}
 N -1140 -940 -1140 -880 {
-lab=#net7}
-N -1140 -820 -1140 -720 {
-lab=#net9}
-N -1140 -660 -1140 -560 {
-lab=#net10}
-N -1140 -500 -1140 -360 {
-lab=#net11}
-N -1140 -300 -1140 -200 {
-lab=#net12}
+lab=#net3}
 N -1140 -140 -1140 -80 {
-lab=#net8}
+lab=#net4}
 N -1440 -960 -1370 -960 {
-lab=#net10}
+lab=#net5}
 N -1440 -960 -1440 -620 {
-lab=#net10}
+lab=#net5}
 N -1440 -620 -1140 -620 {
-lab=#net10}
+lab=#net5}
 N -1440 -100 -1370 -100 {
-lab=#net11}
+lab=#net6}
 N -1440 -440 -1440 -100 {
-lab=#net11}
+lab=#net6}
 N -1440 -440 -1140 -440 {
-lab=#net11}
+lab=#net6}
 N -440 -80 -280 -80 {
 lab=G}
 N -595 -580 -595 -540 {
@@ -77,41 +53,67 @@ N -1285 -1020 -1285 -980 {
 lab=VDD}
 N -1285 -900 -1285 -870 {
 lab=VSS}
-N -1120 -850 -1120 -690 {
-lab=VSS}
-N -1120 -690 -1120 -530 {
-lab=VSS}
-N -1120 -530 -1120 -330 {
-lab=VSS}
-N -1120 -330 -1120 -170 {
-lab=VSS}
 N -1120 -530 -1080 -530 {
-lab=VSS}
-N -1070 -960 -910 -960 {
-lab=VSS}
-N -910 -960 -630 -960 {
-lab=VSS}
-N -630 -960 -470 -960 {
 lab=VSS}
 N -765 -990 -765 -960 {
 lab=VSS}
-N -1070 -100 -910 -100 {
+N -880 -80 -740 -80 {
+lab=#net2}
+N -1140 -500 -1140 -440 {
+lab=#net6}
+N -1140 -820 -1140 -750 {
+lab=#net7}
+N -1140 -690 -1140 -620 {
+lab=#net5}
+N -1120 -850 -1120 -720 {
 lab=VSS}
-N -630 -100 -470 -100 {
+N -1120 -720 -1120 -530 {
 lab=VSS}
-C {sky130_fd_pr/res_high_po.sym} -630 -940 1 0 {name=R3
-W=1
-L=62
-model=res_high_po
-spiceprefix=X
-mult=1}
+N -1000 -940 -940 -940 {
+lab=#net8}
+N -1140 -940 -1060 -940 {
+lab=#net3}
+N -1030 -960 -910 -960 {
+lab=VSS}
+N -770 -960 -620 -960 {
+lab=VSS}
+N -910 -960 -770 -960 {
+lab=VSS}
+N -620 -960 -470 -960 {
+lab=VSS}
+N -740 -940 -650 -940 {
+lab=#net1}
+N -880 -940 -740 -940 {
+lab=#net1}
+N -590 -940 -500 -940 {
+lab=#net9}
+N -1140 -620 -1140 -560 {
+lab=#net5}
+N -1140 -440 -1140 -350 {
+lab=#net6}
+N -1140 -290 -1140 -200 {
+lab=#net10}
+N -1120 -320 -1120 -170 {
+lab=VSS}
+N -1120 -530 -1120 -320 {
+lab=VSS}
+N -1140 -80 -1060 -80 {
+lab=#net4}
+N -1200 -80 -1140 -80 {
+lab=#net4}
+N -1000 -80 -940 -80 {
+lab=#net11}
+N -1030 -100 -910 -100 {
+lab=VSS}
+N -580 -100 -470 -100 {
+lab=VSS}
+N -550 -80 -500 -80 {
+lab=#net12}
+N -740 -80 -610 -80 {
+lab=#net2}
+N -1200 -940 -1140 -940 {
+lab=#net3}
 C {sky130_fd_pr/res_high_po.sym} -470 -940 1 0 {name=R1
-W=1
-L=62
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po.sym} -1070 -940 1 0 {name=R2
 W=1
 L=62
 model=res_high_po
@@ -123,19 +125,7 @@ L=62
 model=res_high_po
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_high_po.sym} -630 -80 1 0 {name=R5
-W=1
-L=62
-model=res_high_po
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/res_high_po.sym} -470 -80 1 0 {name=R6
-W=1
-L=62
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po.sym} -1070 -80 1 0 {name=R7
 W=1
 L=62
 model=res_high_po
@@ -148,18 +138,6 @@ model=res_high_po
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po.sym} -1140 -850 2 0 {name=R9
-W=1
-L=62
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po.sym} -1140 -690 2 0 {name=R10
-W=1
-L=62
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po.sym} -1140 -330 2 0 {name=R11
 W=1
 L=62
 model=res_high_po
@@ -189,7 +167,7 @@ C {devices/lab_wire.sym} -595 -440 3 0 {name=p9 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -1285 -890 3 0 {name=p10 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -1080 -530 2 0 {name=p11 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -765 -990 1 0 {name=p12 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} -975 -100 0 0 {name=p13 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -965 -100 0 0 {name=p13 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -540 -100 0 0 {name=p14 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} -1430 -570 0 0 {name=p15 lab=VDD
 }
@@ -202,3 +180,39 @@ C {devices/ipin.sym} -1430 -460 0 0 {name=p18 lab=V2
 C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -1220 -940 0 0 {name=x1}
 C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -1220 -80 0 0 {name=x2}
 C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -530 -500 0 0 {name=x3}
+C {sky130_fd_pr/res_high_po.sym} -1140 -720 2 0 {name=R2
+W=1
+L=62
+model=res_high_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po.sym} -1030 -940 1 0 {name=R3
+W=1
+L=62
+model=res_high_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po.sym} -620 -940 1 0 {name=R5
+W=1
+L=62
+model=res_high_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po.sym} -1140 -320 2 0 {name=R7
+W=1
+L=62
+model=res_high_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po.sym} -1030 -80 1 0 {name=R10
+W=1
+L=62
+model=res_high_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po.sym} -580 -80 1 0 {name=R11
+W=1
+L=62
+model=res_high_po
+spiceprefix=X
+mult=1}
