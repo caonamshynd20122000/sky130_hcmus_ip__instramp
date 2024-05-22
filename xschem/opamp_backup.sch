@@ -45,14 +45,18 @@ N -740 -280 -280 -280 {
 lab=VDD}
 N -520 -280 -520 -200 {
 lab=VDD}
+N -520 -140 -520 -100 {
+lab=#net2}
+N -520 -40 -520 0 {
+lab=#net3}
 N -600 -170 -540 -170 {
 lab=VSS}
 N -600 -170 -600 360 {
 lab=VSS}
 N -280 -160 -280 40 {
-lab=#net2}
+lab=#net4}
 N -60 -160 -60 40 {
-lab=#net3}
+lab=#net5}
 N -280 -280 -280 -220 {
 lab=VDD}
 N -280 -280 -60 -280 {
@@ -70,7 +74,7 @@ lab=VDD}
 N -60 -280 -20 -280 {
 lab=VDD}
 N -60 -110 80 -110 {
-lab=#net3}
+lab=#net5}
 N 120 -280 120 -140 {
 lab=VDD}
 N -20 -280 120 -280 {
@@ -84,17 +88,17 @@ lab=VDD}
 N 120 -160 160 -160 {
 lab=VDD}
 N -480 300 -210 300 {
-lab=#net4}
+lab=#net6}
 N -520 240 -360 240 {
-lab=#net4}
+lab=#net6}
 N -360 240 -360 300 {
-lab=#net4}
+lab=#net6}
 N -360 240 -0 240 {
-lab=#net4}
+lab=#net6}
 N -0 240 0 300 {
-lab=#net4}
+lab=#net6}
 N 0 300 80 300 {
-lab=#net4}
+lab=#net6}
 N -370 70 -320 70 {
 lab=V2}
 N -280 70 -240 70 {
@@ -106,9 +110,9 @@ lab=VSS}
 N -100 70 -100 360 {
 lab=VSS}
 N -60 -60 -40 -60 {
-lab=#net3}
-N 20 -60 40 -60 {
 lab=#net5}
+N 20 -60 40 -60 {
+lab=#net7}
 N 100 -60 120 -60 {
 lab=VOUT}
 N 30 -80 70 -80 {
@@ -118,16 +122,18 @@ lab=VSS}
 N 120 80 170 80 {
 lab=VOUT}
 N -240 -190 -100 -190 {
-lab=#net2}
+lab=#net4}
 N -20 70 0 70 {
 lab=V1}
 N -160 -190 -160 -120 {
-lab=#net2}
-N -280 -120 -160 -120 {
-lab=#net2}
-N -520 180 -520 270 {
 lab=#net4}
-N -520 -140 -520 120 {
+N -280 -120 -160 -120 {
+lab=#net4}
+N -540 -170 -540 30 {
+lab=VSS}
+N -520 60 -520 120 {
+lab=#net8}
+N -520 180 -520 270 {
 lab=#net6}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} -300 70 0 0 {name=M2
 L=1
@@ -233,7 +239,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 100 -110 0 0 {name=M8
 L=1
-W=\{W8\}
+W=38
 nf=1
 mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -250,10 +256,20 @@ C {devices/ipin.sym} -370 70 0 0 {name=p3 lab=V2
 C {devices/ipin.sym} 0 70 2 0 {name=p4 lab=V1
 }
 C {devices/opin.sym} 170 80 0 0 {name=p5 lab=VOUT}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -10 -60 1 0 {name=C1 model=cap_mim_m3_1 W=5 L=5 MF=5 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -10 -60 1 0 {name=C1 model=cap_mim_m3_1 W=5.5 L=10 MF=5 spiceprefix=X}
 C {devices/ammeter.sym} -520 150 0 0 {name=V_ibias}
 C {sky130_fd_pr/res_high_po_0p69.sym} -520 -170 0 0 {name=R5
-L=\{L_bias\}
+L=18.58
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} -520 -70 0 0 {name=R1
+L=18.58
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} -520 30 0 0 {name=R2
+L=18.58
 model=res_high_po_0p69
 spiceprefix=X
 mult=1}

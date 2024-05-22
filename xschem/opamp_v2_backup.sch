@@ -233,7 +233,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 100 -110 0 0 {name=M8
 L=1
-W=\{W8\}
+W=38.01
 nf=1
 mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -253,7 +253,7 @@ C {devices/opin.sym} 170 80 0 0 {name=p5 lab=VOUT}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -10 -60 1 0 {name=C1 model=cap_mim_m3_1 W=5 L=5 MF=5 spiceprefix=X}
 C {devices/ammeter.sym} -520 150 0 0 {name=V_ibias}
 C {sky130_fd_pr/res_high_po_0p69.sym} -520 -170 0 0 {name=R5
-L=\{L_bias\}
+L=5.86
 model=res_high_po_0p69
 spiceprefix=X
 mult=1}
